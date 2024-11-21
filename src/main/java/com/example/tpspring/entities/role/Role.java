@@ -1,4 +1,4 @@
-package com.example.tpspring.entities;
+package com.example.tpspring.entities.role;
 
 import jakarta.persistence.*;
 

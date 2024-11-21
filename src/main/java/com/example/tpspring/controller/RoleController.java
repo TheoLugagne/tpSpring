@@ -1,6 +1,7 @@
-package com.example.tpspring;
+package com.example.tpspring.controller;
 
-import com.example.tpspring.entities.Role;
+import com.example.tpspring.entities.role.Role;
+import com.example.tpspring.entities.role.RoleRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
