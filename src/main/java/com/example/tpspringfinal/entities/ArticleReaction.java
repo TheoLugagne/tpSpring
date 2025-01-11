@@ -1,29 +1,29 @@
-package com.example.tpspring.entities.reaction;
+package com.example.tpspringfinal.entities;
 
-import com.example.tpspring.entities.article.Article;
-import com.example.tpspring.entities.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
-@Getter
 @Entity
 @Table(name = "article_reaction")
 public class ArticleReaction {
-    @EmbeddedId
-    private ArticleReactionId id;
+    @Getter
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @ManyToOne
-    @MapsId("article")
     @JoinColumn(name = "article_id", nullable = false)
     private Article article;
 
+    @Getter
     @ManyToOne
-    @MapsId("user")
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    @Getter
     @Column(name = "reaction_type", nullable = false)
     @Enumerated(EnumType.STRING)
     private ReactionType reactionType;

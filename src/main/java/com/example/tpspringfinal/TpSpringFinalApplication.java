@@ -1,13 +1,13 @@
-package com.example.tpspring;
+package com.example.tpspringfinal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TpSpringApplication {
+public class TpSpringFinalApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TpSpringApplication.class, args);
+        SpringApplication.run(TpSpringFinalApplication.class, args);
     }
 
 }

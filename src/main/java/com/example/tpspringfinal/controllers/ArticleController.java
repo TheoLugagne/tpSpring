@@ -1,11 +1,10 @@
-package com.example.tpspring.controllers.article;
+package com.example.tpspringfinal.controllers;
 
-import com.example.tpspring.entities.article.Article;
-import com.example.tpspring.entities.reaction.ArticleReaction;
-import com.example.tpspring.entities.reaction.ArticleReactionId;
-import com.example.tpspring.entities.article.ArticleRepository;
-import com.example.tpspring.entities.user.User;
-import com.example.tpspring.entities.user.UserRepository;
+import com.example.tpspringfinal.entities.Article;
+import com.example.tpspringfinal.entities.ArticleReaction;
+import com.example.tpspringfinal.entities.User;
+import com.example.tpspringfinal.repositories.ArticleRepository;
+import com.example.tpspringfinal.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -58,9 +57,7 @@ public class ArticleController {
         Article article = articleRepository.findById(id).orElse(null);
         User user = userRepository.findById(userId).orElse(null);
         if (article != null && user != null) {
-            ArticleReactionId reactionId = new ArticleReactionId(id, userId);
             ArticleReaction reaction = new ArticleReaction();
-            reaction.setId(reactionId);
             reaction.setArticle(article);
             reaction.setUser(user);
             reaction.setReactionType(ArticleReaction.ReactionType.LIKE);
@@ -76,9 +73,7 @@ public class ArticleController {
         Article article = articleRepository.findById(id).orElse(null);
         User user = userRepository.findById(userId).orElse(null);
         if (article != null && user != null) {
-            ArticleReactionId reactionId = new ArticleReactionId(id, userId);
             ArticleReaction reaction = new ArticleReaction();
-            reaction.setId(reactionId);
             reaction.setArticle(article);
             reaction.setUser(user);
             reaction.setReactionType(ArticleReaction.ReactionType.DISLIKE);
