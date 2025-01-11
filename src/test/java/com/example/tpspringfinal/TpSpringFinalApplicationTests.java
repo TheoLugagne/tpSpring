@@ -1,10 +1,10 @@
-package com.example.tpspring;
+package com.example.tpspringfinal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TpSpringApplicationTests {
+class TpSpringFinalApplicationTests {
 
     @Test
     void contextLoads() {
