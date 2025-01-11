@@ -1,6 +1,5 @@
-package com.example.tpspringfinal.repositories;
+package com.example.tpspring.entities.user;
 
-import com.example.tpspringfinal.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

@@ -1,6 +1,5 @@
-package com.example.tpspringfinal.repositories;
+package com.example.tpspring.entities.reaction;
 
-import com.example.tpspringfinal.entities.ArticleReaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ArticleReactionRepository extends JpaRepository<ArticleReaction, Long> {

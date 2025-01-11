@@ -1,6 +1,7 @@
-package com.example.tpspringfinal.entities;
+package com.example.tpspring.entities.user;
 
 import jakarta.persistence.*;
+import com.example.tpspring.entities.role.Role;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,4 +1,4 @@
-package com.example.tpspringfinal.entities;
+package com.example.tpspring.entities.role;
 
 public enum Role {
     MODERATOR,

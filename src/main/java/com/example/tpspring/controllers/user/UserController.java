@@ -1,7 +1,7 @@
-package com.example.tpspringfinal.controllers;
+package com.example.tpspring.controllers.user;
 
-import com.example.tpspringfinal.entities.User;
-import com.example.tpspringfinal.repositories.UserRepository;
+import com.example.tpspring.entities.user.User;
+import com.example.tpspring.entities.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

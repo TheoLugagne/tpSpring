@@ -1,6 +1,6 @@
 services:
   mysql:
-    container_name: 'tp-spring'
+    container_name: 'spring-mysql'
     image: 'mysql:latest'
     environment:
       - 'MYSQL_DATABASE=tp-spring'

@@ -1,11 +1,14 @@
-package com.example.tpspringfinal.entities;
+package com.example.tpspring.entities.article;
 
 import jakarta.persistence.*;
+import com.example.tpspring.entities.user.User;
+import com.example.tpspring.entities.reaction.ArticleReaction;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.Set;
 
 @Setter
@@ -32,4 +35,5 @@ public class Article {
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<ArticleReaction> reactions;
 
+    // Getters and Setters
 }
